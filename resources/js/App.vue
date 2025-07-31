@@ -36,7 +36,7 @@ const sendMessage = async () => {
 
   isLoading.value = true;
   try {
-    const res = await axios.post('/api/generate-image', {
+    const res = await axios.post('/generate-image', {
       prompt: userPrompt,
       negative_prompt: dataForm.value.negative_prompt
     });
@@ -106,7 +106,7 @@ onMounted(() => {
 
   <div>
     <div class="mx-auto flex justify-center">
-      <img src="/logo.png" alt="Logo" class="w-32 h-32" />
+      <img src="{{ assets('logo.png') }}" alt="Logo" class="w-32 h-32" />
     </div>
     <div class="text-center mb-10">
       <div class="text-3xl font-bold text-gray-800">Hi there, Sam</div>
@@ -115,15 +115,15 @@ onMounted(() => {
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 w-full max-w-3xl px-4">
       <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
-        <img src="/logo.png" alt="Icon 1" class="w-8 h-8 mt-2" />
+        <img src="{{ assets('logo.png') }}" alt="Icon 1" class="w-8 h-8 mt-2" />
         <div class="text-md font-semibold text-gray-600 text-center">Transform Words Into Beautiful Images</div>
       </div>
       <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
-        <img src="/logo.png" alt="Icon 2" class="w-8 h-8 mt-2" />
+        <img src="{{ assets('logo.png') }}" alt="Icon 2" class="w-8 h-8 mt-2" />
         <div class="text-md font-semibold text-gray-600 text-center">Generate Instant Art. Infinite Imagination</div>
       </div>
       <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
-        <img src="/logo.png" alt="Icon 3" class="w-8 h-8 mt-2" />
+        <img src="{{ assets('logo.png') }}" alt="Icon 3" class="w-8 h-8 mt-2" />
         <div class="text-md font-semibold text-gray-600 text-center">Interact with the Smartest Data Bot Ever</div>
       </div>
     </div>
