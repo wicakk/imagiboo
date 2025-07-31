@@ -3,6 +3,10 @@
 use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ImageGeneratorController;
+
+Route::post('/generate-image', [ImageGeneratorController::class, 'generate']);
+
 Route::view('/', 'app');
 
 
