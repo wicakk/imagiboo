@@ -75,7 +75,7 @@ onMounted(() => {
 <!-- loading -->
 <div v-if="isLoading" class="fixed inset-0 bg-purple-900 flex items-center justify-center z-50">
   <div class="flex flex-col items-center text-white">
-    <img src="/public/logo.png" class="w-20 h-20 animate-bounce mb-4" alt="Loading Logo" />
+    <img src="{{ asset('logo.png') }}" class="w-20 h-20 animate-bounce mb-4" alt="Loading Logo" />
     <div class="text-xl font-semibold">Loading, please wait...</div>
   </div>
 </div>
