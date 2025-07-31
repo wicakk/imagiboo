@@ -75,7 +75,7 @@ onMounted(() => {
 <!-- loading -->
 <div v-if="isLoading" class="fixed inset-0 bg-purple-900 flex items-center justify-center z-50">
   <div class="flex flex-col items-center text-white">
-    <img src="{{ asset('logo.png') }}" class="w-20 h-20 animate-bounce mb-4" alt="Loading Logo" />
+    <img src="/logo.png" class="w-20 h-20 animate-bounce mb-4" alt="Loading Logo" />
     <div class="text-xl font-semibold">Loading, please wait...</div>
   </div>
 </div>
@@ -106,7 +106,7 @@ onMounted(() => {
 
   <div>
     <div class="mx-auto flex justify-center">
-      <img src="/public/logo.png" alt="Logo" class="w-32 h-32" />
+      <img src="/logo.png" alt="Logo" class="w-32 h-32" />
     </div>
     <div class="text-center mb-10">
       <div class="text-3xl font-bold text-gray-800">Hi there, Sam</div>
@@ -115,15 +115,15 @@ onMounted(() => {
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 w-full max-w-3xl px-4">
       <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
-        <img src="/public/logo.png" alt="Icon 1" class="w-8 h-8 mt-2" />
+        <img src="/logo.png" alt="Icon 1" class="w-8 h-8 mt-2" />
         <div class="text-md font-semibold text-gray-600 text-center">Transform Words Into Beautiful Images</div>
       </div>
       <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
-        <img src="/public/logo.png" alt="Icon 2" class="w-8 h-8 mt-2" />
+        <img src="/logo.png" alt="Icon 2" class="w-8 h-8 mt-2" />
         <div class="text-md font-semibold text-gray-600 text-center">Generate Instant Art. Infinite Imagination</div>
       </div>
       <div class="bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
-        <img src="/public/logo.png" alt="Icon 3" class="w-8 h-8 mt-2" />
+        <img src="/logo.png" alt="Icon 3" class="w-8 h-8 mt-2" />
         <div class="text-md font-semibold text-gray-600 text-center">Interact with the Smartest Data Bot Ever</div>
       </div>
     </div>
