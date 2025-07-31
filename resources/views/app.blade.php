@@ -10,7 +10,9 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
 
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    {{-- Replace this in production --}}
+    <link rel="stylesheet" href="/build/assets/app-BTW0bqHE.css">
+    <script src="/build/assets/app-BI-zCyJ0.js" defer></script>
 </head>
 <body class="bg-gradient-to-b from-purple-100 to-white">
 
