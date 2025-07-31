@@ -5,7 +5,10 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
     build: {
-        outDir: 'public/build', 
+        outDir: 'public/build',
+        emptyOutDir: true,           
+        rollupOptions: {
+            input: './resources/js/app.js',
     },
     plugins: [
         laravel({
