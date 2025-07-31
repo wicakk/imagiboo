@@ -1,62 +1,123 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🖼️ Imagiboo - AI Gambar dari Imajinasi
 
-## About Laravel
+> Ketik ide, langsung jadi gambar. Semudah itu.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Deskripsi
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Imagiboo** adalah aplikasi web yang memungkinkan pengguna menghasilkan gambar dari deskripsi teks (text-to-image) menggunakan teknologi AI. Cocok untuk pelajar, content creator, marketer, hingga pengguna umum yang tidak bisa desain tapi ingin menuangkan imajinasi secara visual.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🚀 Fitur Utama
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 🎨 **Generate Gambar dari Teks**  
+  Tulis deskripsi → hasil gambar langsung muncul.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- ⚡ **Cepat dan Instan**  
+  Tidak perlu menunggu lama, hasil dalam hitungan detik.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- 🧠 **AI Terintegrasi (Replicate API)**  
+  Menggunakan model AI canggih untuk menghasilkan gambar yang relevan.
 
-## Laravel Sponsors
+- 🧑‍🎓 **Autentikasi Google (Firebase)**  
+  Pengguna cukup login dengan akun Google.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- 🕹️ **Frontend Vue 3 + TailwindCSS**  
+  UI modern, responsive, dan user-friendly.
 
-### Premium Partners
+- 🌐 **Backend Laravel 10**  
+  Mengelola API dan komunikasi dengan model AI secara aman.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🔧 Instalasi Lokal
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 1. Clone Repository
 
-## Code of Conduct
+```bash
+git clone https://github.com/username/imagiboo.git
+cd imagiboo
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 2. Setup Backend (Laravel)
 
-## Security Vulnerabilities
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+php artisan migrate
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 3. Setup Frontend (Vue + Vite)
 
-## License
+```bash
+npm install
+npm run build
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Chatbot-AI-ImageGenerate
+### 4. Permission dan Storage
+
+```bash
+chmod -R 775 storage bootstrap/cache
+chown -R www-data:www-data .
+```
+
+---
+
+## 📦 Struktur Proyek
+
+```
+/public          <- asset publik (img/logo.png)
+/resources       <- file Vue, views, dll
+/routes          <- web & API routes Laravel
+/app/Http        <- controller backend
+.env             <- konfigurasi environment
+vite.config.js   <- config Vite frontend
+```
+
+---
+
+## 🎯 Target Pengguna
+
+- Pelajar & Mahasiswa (presentasi & tugas)
+- Content Creator (konten IG, TikTok, dll)
+- Desainer & Marketer (ide visual cepat)
+- Umum (tanpa skill desain)
+
+---
+
+## 💡 Rencana ke Depan
+
+- Support berbagai gaya gambar (anime, realis, 3D)
+- Dukungan login sosial media lainnya
+- History & favorit gambar
+- Export langsung ke media sosial
+
+---
+
+## 🔐 OAuth Error Note
+
+Jika terjadi error seperti:
+
+```
+The current domain is not authorized for OAuth operations.
+```
+
+✅ Masuk ke Firebase Console → Authentication → Settings → **Authorized Domains**  
+→ Tambahkan `your_domain_or_ip`.
+
+---
+
+## 📞 Kontak
+
+- 📧 Email: rizqiarief022@gmail.com  
+- 🧵 Instagram: [@rizqiariefwicak](https://instagram.com/rizqiariefwicak)  
+- 📱 WhatsApp: 0895-1794-7731  
+
+---
+
+## 🙏 Terima Kasih
+Terima kasih telah menjadi bagian dari perjalanan Imagiboo.  
+Mari terus berimajinasi dan berkarya tanpa batas!
