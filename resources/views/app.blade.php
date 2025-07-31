@@ -11,8 +11,8 @@
         crossorigin="anonymous"></script>
 
     {{-- Replace this in production --}}
-    <link rel="stylesheet" href="/dist/assets/app-Oyg81shz.css">
-    <script src="/dist/assets/app-BI-zCyJ0.js" defer></script>
+    <link rel="stylesheet" href="/assets/app-Oyg81shz.css">
+    <script src="/assets/app-BI-zCyJ0.js" defer></script>
 </head>
 <body class="bg-gradient-to-b from-purple-100 to-white">
 
