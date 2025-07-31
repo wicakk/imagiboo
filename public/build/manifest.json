@@ -1,7 +1,7 @@
 {
-  "public/logo.png": {
+  "dist/assets/logo.png": {
     "file": "assets/logo-5dKNqwxx.png",
-    "src": "public/logo.png"
+    "src": "dist/assets/logo.png"
   },
   "resources/css/app.css": {
     "file": "assets/app-Oyg81shz.css",
@@ -12,7 +12,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BI-zCyJ0.js",
+    "file": "assets/app-rrpeCLYO.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
