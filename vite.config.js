@@ -9,6 +9,7 @@ export default defineConfig({
         emptyOutDir: true,           
         rollupOptions: {
             input: './resources/js/app.js',
+        },
     },
     plugins: [
         laravel({
