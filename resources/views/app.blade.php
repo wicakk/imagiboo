@@ -13,6 +13,7 @@
     {{-- Replace this in production --}}
     <link rel="stylesheet" href="{{ asset('build/assets/app-Oyg81shz.css') }}">
     <script src="{{ asset('build/assets/app-BI-zCyJ0.js') }}" defer></script>
+
 </head>
 <body class="bg-gradient-to-b from-purple-100 to-white">
 
