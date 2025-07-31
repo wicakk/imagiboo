@@ -9,8 +9,8 @@ const dataForm = ref({
   negative_prompt: ''
 });
 
-const user = window.Laravel.user;
-const isLoggedIn = window.Laravel.isLoggedIn;
+const user = window.Laravel.user ?? {};
+const isLoggedIn = window.Laravel.isLoggedIn ?? false;
 
 const logout = async () => {
   isLoading.value = true;
@@ -24,17 +24,13 @@ const logout = async () => {
 };
 
 const sendMessage = async () => {
-  const userPrompt = dataForm.value.prompt;
-  if (!userPrompt.trim()) return;
+  const userPrompt = dataForm.value.prompt.trim();
+  if (!userPrompt) return;
 
-  messages.value.push({
-    prompt: userPrompt,
-    side: 'user'
-  });
-
+  messages.value.push({ prompt: userPrompt, side: 'user' });
   dataForm.value.prompt = '';
-
   isLoading.value = true;
+
   try {
     const res = await axios.post('/generate-image', {
       prompt: userPrompt,
@@ -54,6 +50,7 @@ const sendMessage = async () => {
       });
     }
   } catch (err) {
+    console.error('Error saat generate:', err);
     messages.value.push({
       prompt: 'Terjadi error saat generate gambar.',
       side: 'assistance'
@@ -66,9 +63,10 @@ const sendMessage = async () => {
 onMounted(() => {
   setTimeout(() => {
     isLoading.value = false;
-  }, 1500); // Simulasi loading saat pertama buka halaman
+  }, 1500);
 });
 </script>
+
 
 
 <template>
