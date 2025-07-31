@@ -1,0 +1,23 @@
+{
+  "public/logo.png": {
+    "file": "assets/logo-5dKNqwxx.png",
+    "src": "public/logo.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BTW0bqHE.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BI-zCyJ0.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "assets": [
+      "assets/logo-5dKNqwxx.png"
+    ]
+  }
+}
