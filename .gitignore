@@ -21,6 +21,5 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
-.vercel
 !public/build
 !public/build/assets
