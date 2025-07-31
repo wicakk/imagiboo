@@ -11,8 +11,11 @@
         crossorigin="anonymous"></script>
 
     {{-- Replace this in production --}}
-    <link rel="stylesheet" href="/build/assets/app-Oyg81shz.css">
-    <script src="/build/assets/app-BI-zCyJ0.js" defer></script>
+    {{-- <link rel="stylesheet" href="/build/assets/app-Oyg81shz.css">
+    <script src="/build/assets/app-BI-zCyJ0.js" defer></script> --}}
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 
 
 </head>
